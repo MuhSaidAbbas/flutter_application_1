@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'loginPage.dart';
+import 'home.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    home: LoginPage()
+    
+  ));
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({super.key, required LoginPage home});
 
   // This widget is the root of your application.
   @override
